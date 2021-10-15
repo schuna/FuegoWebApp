@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.timezone import now
+from django.conf import settings
 
 
 class Posts(models.Model):
@@ -8,3 +9,6 @@ class Posts(models.Model):
     image_path = models.CharField(max_length=255, unique=True)
     updated_time = models.DateTimeField(default=now)
     user_id = models.IntegerField()
+
+    def __str__(self) -> str:
+        return f"{self.description}, {settings.BASE_DIR}"
