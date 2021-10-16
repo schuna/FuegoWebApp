@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Pycharm
+.idea
+
+# Secret Key file
+# {"secret_key": password with hashing}
+setup.json

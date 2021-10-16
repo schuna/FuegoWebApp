@@ -7,14 +7,16 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('myblog', '0002_remove_posts_image_path'),
+        ("myblog", "0002_remove_posts_image_path"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='posts',
-            name='image_path',
-            field=models.CharField(default=django.utils.timezone.now, max_length=255, unique=True),
+            model_name="posts",
+            name="image_path",
+            field=models.CharField(
+                default=django.utils.timezone.now, max_length=255, unique=True
+            ),
             preserve_default=False,
         ),
     ]
