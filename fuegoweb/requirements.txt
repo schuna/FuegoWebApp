@@ -2,3 +2,4 @@ black
 djangorestframework
 pytest
 pytest-django
+flake8
