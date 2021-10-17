@@ -1,0 +1,4 @@
+black
+djangorestframework
+pytest
+pytest-django
