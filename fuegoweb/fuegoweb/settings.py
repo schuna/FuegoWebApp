@@ -21,9 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 #
-key_path = os.path.join(BASE_DIR, "setup.json")
-with open(key_path, "r") as f:
-    SECRET_KEY = json.load(f)
+import secrets
+SECRET_KEY = secrets.token_urlsafe(16)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
