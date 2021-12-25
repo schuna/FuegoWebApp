@@ -7,7 +7,7 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
-                    python --version
+                    apt-get install -y python3
                 '''
             }
         }
